@@ -30,8 +30,8 @@ $color-body-content-bg: hsl(150, 77%, 91%);
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    width: 210.1vh;
+    background-color: #f0fcea;
+    width: 210vh;
 }
 
 .menu {
@@ -91,7 +91,7 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 210.1vh;
+        width: 210vh;
         height: 180px;
         background-color: #0c4e26;
         opacity: 0.85;
@@ -104,7 +104,7 @@ body {
     }
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 210.1vh 700px;
+    background-size: 210vh 700px;
 }
 
 h1 {
@@ -117,19 +117,36 @@ li {
     font-size: 20px;
 }
 
-.contexto {
-    height: 900px;
+.content {
+    height: aut0;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    text-align: left;
+    align-items: center;  text-align: left;
     font-family: "Playwrite DE Grund", cursive;
+    padding: 80px 80px 80px 80px;
 
     h3 {
         margin-left: 40px;
     }
     p {
-        margin: 0px 20px 0px 20px;
+        margin: 30px 40px 0px 0px;
+    }
+
+    .linha_texto {
+        height: 5px;
+        width: 230px;
+        background-color: #1f8347;
+        margin-left: 30px;
+        box-shadow: 0px 0px 30px #073519;
+    }
+
+
+    img {
+        width: 500px;
+        border-radius: 15px;
+        justify-self: center;
+        border: 5px solid #0c4e26;
+        box-shadow: 0px 0px 30px #073519;
     }
 }
 
@@ -138,7 +155,7 @@ li {
     display: flex;
     background-image: url(images/Grupo_indigenas.jpg);
     color: white;
-    width: 210.1vh;
+    width: 210vh;
     height: 180px;
     justify-content: space-around;
     background-repeat: no-repeat;
@@ -156,11 +173,14 @@ li {
     }
 
     .rodape_nos {
-        display: flex;
-        justify-content: space-between;
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
 
         ul {
             justify-content: space-around;
+            overflow: hidden;
+            padding: 0px 100px 0px 100px;
         }
         li {
             width: 200px;
