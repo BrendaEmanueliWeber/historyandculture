@@ -1,0 +1,180 @@
+$color-header-bg: hsl(181, 76%, 23%);
+$color-li-bg: hsl(144, 39%, 69%);
+$color-linha-tit-bg: hsl(126, 53%, 56%);
+$color-content-bg: hsl(144, 39%, 69%);
+$color-content-pg-bg: hsl(150, 77%, 91%);
+$color-body-content-bg: hsl(150, 77%, 91%);
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+.italiana-regular {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    width: 210.1vh;
+}
+
+.menu {
+    display: flex;
+    background-color: #0c4e26;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center ;
+
+    li {
+        text-wrap: nowrap;
+        width: 200px;
+        height: 35px;
+        text-align: center;
+        list-style: none;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 780;
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+
+        img {
+            width: 55px;
+        }
+    }
+
+    .casa {
+        img {
+            width: 45px;
+        }
+    }
+
+    .search-bar input[type="text"] {
+        padding: 10px;
+        border: none;   
+        border-radius: 4px;
+        font-size: 16px;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(images/Grupo_indigenas.jpg);
+    color: white;
+    height: 180px;
+    
+    .verde {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 210.1vh;
+        height: 180px;
+        background-color: #0c4e26;
+        opacity: 0.85;
+
+        h2 {
+            font-family: "Dancing Script", cursive;
+            font-size: 80px;
+            opacity: 0.8;
+        }
+    }
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 210.1vh 700px;
+}
+
+h1 {
+    font-family: "Italiana", sans-serif;
+}
+
+li {
+    font-family: "Italiana", sans-serif;
+    font-weight: 530;
+    font-size: 20px;
+}
+
+.contexto {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    font-family: "Playwrite DE Grund", cursive;
+
+    h3 {
+        margin-left: 40px;
+    }
+    p {
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+
+.rodape {
+    display: flex;
+    background-image: url(images/Grupo_indigenas.jpg);
+    color: white;
+    width: 210.1vh;
+    height: 180px;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 210.1vh 700px;
+
+    .verde_rodape {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 210.1vh;
+        height: 180px;
+        background-color: #0c4e26;
+        opacity: 0.85;
+    }
+
+    .rodape_nos {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            justify-content: space-around;
+        }
+        li {
+            width: 200px;
+            height: 35px;
+            text-align: center;
+            list-style: none;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 780;
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    }
+}
