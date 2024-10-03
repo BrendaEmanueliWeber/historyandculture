@@ -34,6 +34,7 @@ body {
   align-items: center;
 }
 .menu li {
+  display: flex;
   text-wrap: nowrap;
   width: 200px;
   height: 35px;
@@ -44,15 +45,18 @@ body {
   font-weight: 780;
 }
 .menu a {
+  display: flex;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .menu .logo {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
+  justify-content: center;
+  display: flex;
 }
 .menu .logo img {
-  width: 55px;
+  width: 65px;
 }
 .menu .casa img {
   width: 45px;
@@ -134,6 +138,46 @@ li {
   justify-self: center;
   border: 5px solid #0c4e26;
   box-shadow: 0px 0px 30px #073519;
+}
+
+.content2 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-family: "Playwrite DE Grund", cursive;
+  padding: 0px 100px 0px 100px;
+}
+.content2 h3 {
+  padding-top: 80px;
+  margin-left: 40px;
+}
+.content2 p {
+  margin-right: 40px;
+}
+.content2 li {
+  margin: 30px 40px 0px 0px;
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 16px;
+}
+.content2 .linha_texto {
+  height: 5px;
+  width: 230px;
+  background-color: #1f8347;
+  margin-left: 30px;
+  box-shadow: 0px 0px 30px #073519;
+  margin-bottom: 20px;
+}
+.content2 img {
+  width: 500px;
+  border-radius: 15px;
+  justify-self: center;
+  border: 5px solid #0c4e26;
+  box-shadow: 0px 0px 30px #073519;
+}
+
+.espaco {
+  padding-bottom: 80px;
 }
 
 .rodape {

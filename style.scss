@@ -43,6 +43,7 @@ body {
     align-items: center ;
 
     li {
+        display: flex;
         text-wrap: nowrap;
         width: 200px;
         height: 35px;
@@ -54,15 +55,18 @@ body {
     }
 
     a {
+        display: flex;
         color: rgb(255, 255, 255);
         text-decoration: none;
     }
     .logo {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: bold;
+        justify-content: center;
+        display: flex;
 
         img {
-            width: 55px;
+            width: 65px;
         }
     }
 
@@ -157,6 +161,51 @@ li {
         border: 5px solid #0c4e26;
         box-shadow: 0px 0px 30px #073519;
     }
+}
+
+.content2 {
+    height: auto;
+    display: flex;
+    align-items: center;  text-align: left;
+    font-family: "Playwrite DE Grund", cursive;
+    padding: 0px 100px 0px 100px;
+
+    h3 {
+        padding-top: 80px;
+        margin-left: 40px;
+    }
+
+    p {
+        margin-right: 40px;
+    }
+
+    li {
+        margin: 30px 40px 0px 0px;
+        font-family: "Playwrite DE Grund", cursive;
+        font-size: 16px;
+    }
+
+    .linha_texto {
+        height: 5px;
+        width: 230px;
+        background-color: #1f8347;
+        margin-left: 30px;
+        box-shadow: 0px 0px 30px #073519;
+        margin-bottom: 20px;
+    }
+
+
+    img {
+        width: 500px;
+        border-radius: 15px;
+        justify-self: center;
+        border: 5px solid #0c4e26;
+        box-shadow: 0px 0px 30px #073519;
+    }
+}
+
+.espaco {
+    padding-bottom: 80px;
 }
 
 
