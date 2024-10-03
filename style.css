@@ -60,6 +60,7 @@ body {
 }
 .menu .casa img {
   width: 45px;
+  display: flex;
 }
 .menu .search-bar input[type=text] {
   padding: 10px;
@@ -111,6 +112,7 @@ li {
   align-items: center;
   text-align: left;
   font-family: "Playwrite DE Grund", cursive;
+  font-size: 18px;
   padding: 80px 100px 80px 100px;
 }
 .content h3 {
@@ -118,9 +120,15 @@ li {
 }
 .content p {
   margin-right: 40px;
+  padding-top: 20px;
+}
+.content p1 {
+  display: flex;
+  font-size: 8px;
+  align-self: flex-end;
 }
 .content li {
-  margin: 30px 40px 0px 0px;
+  margin: 0px 40px 0px 60px;
   font-family: "Playwrite DE Grund", cursive;
   font-size: 16px;
 }
@@ -134,7 +142,7 @@ li {
 }
 .content img {
   width: 500px;
-  border-radius: 15px;
+  border-radius: 40px;
   justify-self: center;
   border: 5px solid #0c4e26;
   box-shadow: 0px 0px 30px #073519;
@@ -146,6 +154,7 @@ li {
   align-items: center;
   text-align: left;
   font-family: "Playwrite DE Grund", cursive;
+  font-size: 18px;
   padding: 0px 100px 0px 100px;
 }
 .content2 h3 {
@@ -153,10 +162,20 @@ li {
   margin-left: 40px;
 }
 .content2 p {
+  margin-left: 0px;
+  margin-top: 30px;
   margin-right: 40px;
 }
+.content2 p1 {
+  display: flex;
+  font-size: 8px;
+  align-self: flex-end;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 .content2 li {
-  margin: 30px 40px 0px 0px;
+  margin: 30px 40px 0px 60px;
   font-family: "Playwrite DE Grund", cursive;
   font-size: 16px;
 }
@@ -170,10 +189,19 @@ li {
 }
 .content2 img {
   width: 500px;
-  border-radius: 15px;
+  border-radius: 40px;
   justify-self: center;
   border: 5px solid #0c4e26;
-  box-shadow: 0px 0px 30px #073519;
+  box-shadow: 0px 1px 30px #073519;
+}
+
+.graficos-populacao {
+  display: flex;
+  flex-direction: column;
+}
+.graficos-populacao img {
+  margin: 20px 0px 20px 0px;
+  border-radius: 25px;
 }
 
 .espaco {
