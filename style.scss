@@ -8,6 +8,7 @@ $color-body-content-bg: hsl(150, 77%, 91%);
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .italiana-regular {
     font-family: "Italiana", sans-serif;
@@ -21,6 +22,14 @@ $color-body-content-bg: hsl(150, 77%, 91%);
     font-weight: weight;
     font-style: normal;
 }
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
 
 
 * {
@@ -80,7 +89,7 @@ body {
     .search-bar input[type="text"] {
         padding: 10px;
         border: none;   
-        border-radius: 4px;
+        border-radius: 10px;
         font-size: 16px;
     }
 }
@@ -118,7 +127,7 @@ h1 {
 }
 
 li {
-    font-family: "Italiana", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 530;
     font-size: 20px;
 }
@@ -181,6 +190,7 @@ li {
     font-family: "Playwrite DE Grund", cursive;
     font-size: 18px;
     padding: 0px 100px 0px 100px;
+    word-break: break-all;
 
     h3 {
         padding-top: 80px;
@@ -217,14 +227,28 @@ li {
         margin-bottom: 20px;
     }
 
-
     img {
         width: 500px;
         border-radius: 40px;
         justify-self: center;
         border: 5px solid #0c4e26;
         box-shadow: 0px 1px 30px #073519;
-    }   
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        :visited {
+            color: #9999;
+        }
+        :active {
+            color:#197732;
+        }
+        :hover {
+            color: #0c5c2a;
+        }
+    }
 }
 
 .graficos-populacao {
@@ -287,6 +311,19 @@ li {
             color: rgb(255, 255, 255);
             text-decoration: none;
         }
+    }
+}
+.direitos_rodape {
+    background-color: #073519;
+    height: 30px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: #F5DAA3;
+        font-size: 20px;
     }
 }
 
