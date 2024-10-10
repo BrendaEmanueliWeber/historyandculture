@@ -285,4 +285,45 @@ li {
 .direitos_rodape p {
   color: #F5DAA3;
   font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  margin: 40px auto;
+  width: 80%;
+  max-width: 900px;
+  overflow: hidden;
+  position: relative;
+  border: solid 10px #0c5c2a;
+  border-radius: 20px;
+}
+.carousel-container .carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  animation: 20s infinite slide linear;
+}
+.carousel-container .carousel .carousel-item {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #073519;
+}
+.carousel-container .carousel .carousel-item img {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-300%);
+  }
 }/*# sourceMappingURL=style.css.map */
