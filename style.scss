@@ -134,6 +134,12 @@ li {
     font-size: 20px;
 }
 
+main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
+}
+
 .content {
     height: auto;
     display: flex;
@@ -193,7 +199,7 @@ li {
     font-family: "Playwrite DE Grund", cursive;
     font-size: 18px;
     padding: 0px 100px 0px 100px;
-    word-break: break-all;
+    word-break: keep-all;
 
     h3 {
         padding-top: 80px;
@@ -209,7 +215,7 @@ li {
     p1 {
         display: flex;
         font-size: 8px;
-        align-self: flex-end;
+        text-align: center;
         padding: 0;
         margin: 0;
         border: 0;
@@ -259,6 +265,8 @@ li {
 .graficos-populacao {
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    align-self: end;
 
     img {
         margin: 20px 0px 20px 0px;
@@ -320,6 +328,21 @@ li {
     }
 }
 
+.imagem {
+    img {
+        width: 500px;
+        border-radius: 40px;
+        justify-self: center;
+        border: 5px solid #0c4e26;
+        box-shadow: 0px 0px 30px #073519;
+        transition: 400ms linear;
+    }
+
+    img:hover {
+        transform: scale(1.01);
+    }
+}
+
 .direitos_rodape {
     background-color: #073519;
     height: 30px;
@@ -340,42 +363,73 @@ li {
     box-sizing: border-box;
 }
 
+.content3 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 18px;
+    padding: 0px 100px 0px 100px;
+    word-break: break-all;
 
-.carousel-container {
-    margin: 40px auto;
-    width: 80%;
-    max-width: 900px;
-    overflow: hidden;
-    position: relative;
+    h3 {
+        padding-top: 80px;
+        margin-left: 40px;
+    }
 
-    .carousel {
+    p {
+        margin-left: 0px;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
+    p1 {
         display: flex;
-        transition: transform 0.5s ease-in-out;
-        animation: 20s infinite slide linear;
+        font-size: 8px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
 
-        .carousel-item {
-            min-width: 100%;
-            display: flex;
-            justify-content: center;
-            background-color: #073519;
+    li {
+        margin: 30px 40px 0px 60px;
+        font-family: "Playwrite DE Grund", cursive;
+        font-size: 16px;
+    }
 
-            img {
-                width: 100%;
-                height: auto;
-                opacity: 0.6;
-            }
+    .linha_texto {
+        height: 5px;
+        width: 230px;
+        background-color: #1f8347;
+        margin-left: 30px;
+        box-shadow: 0px 0px 30px #073519;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 500px;
+        border-radius: 40px;
+        justify-self: center;
+        border: 5px solid #0c4e26;
+        box-shadow: 0px 1px 30px #073519;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        :visited {
+            color: #9999;
         }
-    }
-}
 
+        :active {
+            color: #197732;
+        }
 
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-300%);
+        :hover {
+            color: #0c5c2a;
+        }
     }
 }
