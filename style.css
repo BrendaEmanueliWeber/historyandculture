@@ -28,6 +28,13 @@
   border: 0;
 }
 
+bodyq {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0fcea;
@@ -101,8 +108,20 @@ body {
   font-family: "Dancing Script", cursive;
   font-size: 80px;
   opacity: 0.8;
+  animation: tracking-in-contract 10s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
+@keyframes tracking-in-contract {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
 h1 {
   font-family: "Italiana", sans-serif;
 }
@@ -221,6 +240,49 @@ main {
 }
 .content2 a :hover {
   color: #0c5c2a;
+}
+
+.content4 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 18px;
+  padding: 0px 100px 0px 100px;
+  word-break: keep-all;
+}
+.content4 .videos {
+  padding-top: 2vh;
+  width: 190vh;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 6vh;
+}
+.content4 .videos iframe {
+  border-radius: 3vh;
+  width: 80vh;
+  height: 48vh;
+}
+.content4 .videos p1 {
+  padding-left: 5vh;
+  display: flex;
+  font-size: 16px;
+  text-align: center;
+}
+.content4 h3 {
+  padding-top: 80px;
+  margin-left: 40px;
+}
+.content4 .linha_texto {
+  height: 5px;
+  width: 230px;
+  background-color: #1f8347;
+  margin-left: 30px;
+  box-shadow: 0px 0px 30px #073519;
+  margin-bottom: 20px;
 }
 
 .graficos-populacao {
@@ -372,4 +434,173 @@ main {
 }
 .content3 a :hover {
   color: #0c5c2a;
+}
+
+.menu {
+  display: flex;
+  background-color: #0c4e26;
+  height: 60px;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu li {
+  display: flex;
+  text-wrap: nowrap;
+  width: 200px;
+  height: 35px;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 780;
+}
+.menu a {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.menu .logo {
+  font-size: 28px;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+}
+.menu .logo img {
+  width: 65px;
+}
+.menu .casa img {
+  width: 45px;
+  display: flex;
+}
+.menu .search-bar input[type=text] {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.fundocarrossel {
+  margin: 1vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 210vh;
+  height: 120vh;
+}
+.fundocarrossel .borda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 170vh;
+  border-radius: 3vh;
+  height: 110vh;
+  background-image: url(images/tribal-fundo.jpg);
+}
+.fundocarrossel .index-content {
+  align-items: center;
+  background-color: #155726;
+  opacity: 0.9;
+  display: flex;
+  width: 120vh;
+  height: 32vh;
+  border-radius: 2vh;
+}
+.fundocarrossel .index-content .escrita {
+  text-align: center;
+  font-family: "Playwrite DE Grund", cursive;
+  color: rgb(255, 255, 255);
+  font-size: 3.5vh;
+  margin: 3vh;
+  align-self: center;
+}
+
+.carrossel {
+  padding: 5vh 0vh;
+}
+
+.slider {
+  border-radius: 2vh;
+  margin: 0 auto;
+  width: 100vh;
+  height: 400px;
+  overflow: hidden;
+}
+.slider .slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+.slider .slides input {
+  display: none;
+}
+.slider .slides .slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+.slider .slides .slide img {
+  width: 800px;
+}
+.slider .slides #radio1:checked ~ .first {
+  margin-left: 0;
+}
+.slider .slides #radio2:checked ~ .first {
+  margin-left: -25%;
+}
+.slider .slides #radio3:checked ~ .first {
+  margin-left: -50%;
+}
+.slider .slides #radio4:checked ~ .first {
+  margin-left: -75%;
+}
+.slider .slides #radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+.slider .slides #radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+.slider .slides #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
+}
+.slider .slides #radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #fff;
+}
+.slider .slides .navigation-auto div {
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.slider .slides .navigation-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+.slider .slides .navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+.slider .manual-navigation {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.slider .manual-navigation .manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.slider .manual-navigation .manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+.slider .manual-navigation .manual-btn:hover {
+  background-color: #fff;
 }/*# sourceMappingURL=style.css.map */
