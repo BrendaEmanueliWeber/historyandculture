@@ -38,12 +38,6 @@ $color-body-content-bg: hsl(150, 77%, 91%);
     border: 0;
 }
 
-bodyq {
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -160,12 +154,6 @@ li {
     font-size: 20px;
 }
 
-main {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto 1fr auto;
-}
-
 .content {
     height: auto;
     display: flex;
@@ -210,7 +198,7 @@ main {
 
     img {
         width: 500px;
-        border-radius: 40px;
+        
         justify-self: center;
         border: 5px solid #0c4e26;
         box-shadow: 0px 0px 30px #073519;
@@ -263,10 +251,11 @@ main {
     }
 
     img {
-        width: 500px;
-        border-radius: 40px;
-        justify-self: center;
+        float: right;
+        width: 70vh;
+        margin-left: 5vh;
         border: 5px solid #0c4e26;
+        border-radius: 2.5vh;
         box-shadow: 0px 1px 30px #073519;
     }
 
@@ -287,6 +276,8 @@ main {
         }
     }
 }
+
+
 
 .content4 {
     height: auto;
@@ -342,11 +333,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-self: end;
+    padding-left: 21vh;
 
     img {
         margin: 20px 0px 20px 0px;
-        border-radius: 25px
     }
 }
 
@@ -407,10 +397,10 @@ main {
 .imagem {
     img {
         width: 500px;
-        border-radius: 40px;
+        border-radius: 3vh;
         justify-self: center;
         border: 5px solid #0c4e26;
-        box-shadow: 0px 0px 30px #073519;
+        box-shadow: 0px 0px 20px #073519;
         transition: 400ms linear;
     }
 
@@ -462,21 +452,6 @@ main {
         margin-right: 40px;
     }
 
-    p1 {
-        display: flex;
-        font-size: 8px;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        border: 0;
-    }
-
-    li {
-        margin: 30px 40px 0px 60px;
-        font-family: "Playwrite DE Grund", cursive;
-        font-size: 16px;
-    }
-
     .linha_texto {
         height: 5px;
         width: 230px;
@@ -484,14 +459,6 @@ main {
         margin-left: 30px;
         box-shadow: 0px 0px 30px #073519;
         margin-bottom: 20px;
-    }
-
-    img {
-        width: 500px;
-        border-radius: 40px;
-        justify-self: center;
-        border: 5px solid #0c4e26;
-        box-shadow: 0px 1px 30px #073519;
     }
 
     a {
@@ -565,156 +532,123 @@ main {
     }
 }
 
+.linha_texto {
+    height: 5px;
+    width: 230px;
+    background-color: #1f8347;
+    margin-left: 20vh;
+    box-shadow: 0px 0px 30px #073519;
+    margin-bottom: 20px;
+}
 
+h3 {
+    padding-top: 80px;
+    margin-left: 21.5vh;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 18px;
+}
 
 //index-carrosel-paginicial
 
-.fundocarrossel {
-    margin: 1vh 0 0 0;
+.pg-inicial {
     display: flex;
     flex-direction: column;
+    width: 210vh;
+    height: 87vh;
+    background-image: url(images/fundo-indigena.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     justify-content: center;
     align-items: center;
-    width: 210vh;
-    height: 120vh;
+    font-family: "Playwrite DE Grund", cursive;
 
-    .borda {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 170vh;
-        border-radius: 3vh;
-        height: 110vh;
-        background-image: url(images/tribal-fundo.jpg);
+    .escrita {
+        margin: 0 20vh 0 20vh;
+    }
+    
+    p {
+        animation: text-shadow-pop-tl 0.6s both;
+        font-size: 6.5vh;
+        font-weight: 700;
+        opacity: 0.8;
+        color: #fff;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 5vh;
     }
 
-    .index-content {
-        align-items: center;
-        background-color: #155726;
-        opacity: 0.9;
-        display: flex;
-        width: 120vh;
-        height: 32vh;
-        border-radius: 2vh;
-
-        .escrita {
-            text-align: center;
-            font-family: "Playwrite DE Grund", cursive;
-            color: rgb(255, 255, 255);
-            font-size: 3.5vh;
-            margin: 3vh;
-            align-self: center;
-        }
+    button {
+        background-color: #2f602c;
+        width: 16vh;
+        height: 6.5vh;
+        border-radius: 10vh;
+        box-shadow: -4px 4px 4px #303e2c;
     }
 }
 
-
-
-.carrossel {
-    padding: 5vh 0vh;
+@keyframes text-shadow-pop-tl {
+    0% {
+        text-shadow: 0 0 #51724f, 0 0 #51724f, 0 0 #51724f, 0 0 #51724f, 0 0 #51724f, 0 0 #51724f, 0 0 #51724f, 0 0 #51724f;
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        text-shadow: -3px -3px 2px #51724f, -3px -3px 2px #51724f, -3px -3px 2px #51724f, -3px -3px 2px #51724f, -3px -3px 2px #51724f, -3px -3px 2px #51724f, -3px -3px 2px #51724f, -3px -3px 2px #51724f;
+        transform: translateX(8px) translateY(8px);
+    }
 }
 
-.slider {
-    border-radius: 2vh;
-    margin: 0 auto;
-    width: 100vh;
-    height: 400px;
-    overflow: hidden;
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
 
-    .slides {
-        width: 400%;
-        height: 400px;
-        display: flex;
-
-        input {
-            display: none;
-        }
-
-        .slide {
-            width: 25%;
-            position: relative;
-            transition: 2s;
-
-            img {
-                width: 800px;
-            }
-        }
-
-        #radio1:checked~.first {
-            margin-left: 0;
-        }
-
-        #radio2:checked~.first {
-            margin-left: -25%;
-        }
-
-        #radio3:checked~.first {
-            margin-left: -50%;
-        }
-
-        #radio4:checked~.first {
-            margin-left: -75%;
-        }
-
-        #radio1:checked~.navigation-auto .auto-btn1 {
-            background-color: #fff;
-        }
-
-        #radio2:checked~.navigation-auto .auto-btn2 {
-            background-color: #fff;
-        }
-
-        #radio3:checked~.navigation-auto .auto-btn3 {
-            background-color: #fff;
-        }
-
-        #radio4:checked~.navigation-auto .auto-btn4 {
-            background-color: #fff;
-        }
-
-        .navigation-auto div {
-            border: 2px solid #20a6ff;
-            padding: 5px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 1s;
-        }
-
-        .navigation-auto {
-            position: absolute;
-            width: 800px;
-            margin-top: 360px;
+    .image-box {
+        position: relative;
+        width: 300px;
+        height: 200px;
+    
+        a {
             display: flex;
-            justify-content: center;
-        }
-
-        .navigation-auto div:not(:last-child) {
-            margin-right: 40px;
+            text-decoration: none;
+            color: #fff;
         }
     }
 
-    .manual-navigation {
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .overlay {
         position: absolute;
-        width: 800px;
-        margin-top: -40px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
         display: flex;
         justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 10px;
 
-        .manual-btn {
-            border: 2px solid #fff;
-            padding: 5px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 1s;
-        }
-
-        .manual-btn:not(:last-child) {
-            margin-right: 40px;
-        }
-
-        .manual-btn:hover {
-            background-color: #fff;
-        }
+        font-size: 18px;
     }
 }
+
+
+
+.image-box:hover .image {
+    transform: scale(1.1);
+}
+
+.image-box:hover .overlay {
+    opacity: 1;
+}
+
